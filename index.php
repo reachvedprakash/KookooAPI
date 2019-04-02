@@ -1,19 +1,9 @@
 
 
 <?php
-  /* * *
-   * Use Collect DTMF to collect DTMF input from user.
-   * 
-   * 
-   * 
-   */
-
-
-   
   require 'response.php';
   require 'Request.php';
   require 'router.php';
-  
 
 
   $r = new response();
@@ -66,11 +56,6 @@
         $r->addHangup();
     }
     $r->send();
-
-$router = new Router(new Request);
-$router->get('/([A-Za-z]+)', function() {});
-$router->get('/1', function() {});
-$router->get('/2', function() {});
 
    //include response.php into your code
   
